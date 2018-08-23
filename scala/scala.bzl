@@ -342,9 +342,9 @@ def scala_repositories(
   )
 
   # Template for binary launcher
-  BAZEL_JAVA_LAUNCHER_VERSION = "0.14.1"
+  BAZEL_JAVA_LAUNCHER_VERSION = "2a9fac145aed0e056b127096c9bd9505ccbc4ee6"
   java_stub_template_url = (
-      "raw.githubusercontent.com/bazelbuild/bazel/" +
+      "raw.githubusercontent.com/aherrmann/bazel/" +
       BAZEL_JAVA_LAUNCHER_VERSION +
       "/src/main/java/com/google/devtools/build/lib/bazel/rules/java/" +
       "java_stub_template.txt")
@@ -355,7 +355,7 @@ def scala_repositories(
           "https://%s" % java_stub_template_url
       ],
       sha256 =
-      "2cbba7c512e400df0e7d4376e667724a38d1155db5baaa81b72ad785c6d761d1",
+      "39097bdc47407232e0fe7eed4f2c175c067b7eda95873cb76ffa76f1b4c18895",
   )
 
   native.bind(
