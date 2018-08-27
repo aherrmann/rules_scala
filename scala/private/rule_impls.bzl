@@ -421,7 +421,7 @@ def _write_java_wrapper(ctx, args = "", wrapper_preamble = ""):
   wrapper = ctx.actions.declare_file(ctx.label.name + "_wrapper.sh")
   ctx.actions.write(
       output = wrapper,
-      content = """#!/bin/bash
+      content = """#!/usr/bin/env bash
 {preamble}
 
 {exec_str}{javabin} "$@" {args}
